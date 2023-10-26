@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
-let g:netrw_dirhist_4='/root/AirBnB_clone_v2'
-let g:netrw_dirhist_3='/root/AirBnB_clone_v2/models'
-let g:netrw_dirhist_2='/etc/ssh/ssh_config.d'
-let g:netrw_dirhist_1='/root/simple_shell/.git'
