@@ -1,22 +1,23 @@
 #!/usr/bin/python3
 """
-starts a Flask web application
+Script that starts a Flask web application:
+listening on 0.0.0.0, port 5000
+With two Routes
 """
-
-from flask import Flask
+from flask import Flask, request
 app = Flask(__name__)
 
 
 @app.route('/', strict_slashes=False)
-def index():
-    """returns Hello HBNB!"""
-    return 'Hello HBNB!'
+def hello_hbnb():
+    """ First Route that display Hello HBNB"""
+    return "Hello HBNB!"
 
 
 @app.route('/hbnb', strict_slashes=False)
 def hbnb():
-    """returns HBNB"""
-    return 'HBNB'
+    """ Second Route that display HBNB"""
+    return "HBNB"
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port='5000')
+    app.run(host='0.0.0.0', port=5000)
